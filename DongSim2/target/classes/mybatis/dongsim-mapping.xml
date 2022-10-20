@@ -12,9 +12,10 @@
 </select>-->
 <select id="selectAll" parameterType="dto"  resultType="dto">
 <!--  SELECT idx as idx,dk_book_idx as dk_book_idx,gradations as gradations,question as question,answer as answer,use_yn as use_yn FROM dk_book_quiz --> 
- SELECT *
+SELECT ix,dk_book_idx,gradations,question,answer,use_yn FROM dk_book_quiz OREDER BY idx
+<!--  SELECT *
 FROM dk_book_quiz
-ORDER BY idx ASC
+ORDER BY idx ASC -->
 </select>
 
 <select id="getTotal" resultType="int">
