@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="mybatis.DongSimMapper">
+
+
+ <!--퀴즈 리스트 -->
+
+<!--  <select id="selectAll" resultType="dto">
+    select * from dk_book_quiz
+</select>-->
+<select id="selectAll" parameterType="dto"  resultType="dto">
+<!--  SELECT idx as #{idx},dk_book_idx as dk_#{book_idx},gradations as #{gradations},question as #{question},answer as #{answer},use_yn as #{use_yn} FROM dk_book_quiz --> 
+ SELECT *
+FROM dk_book_quiz
+ORDER BY idx ASC
+</select>
+
+<select id="getTotal" resultType="int">
+		select count(*) as cnt from dk_book_quiz
+	</select>
+</mapper>
