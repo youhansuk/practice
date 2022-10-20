@@ -18,7 +18,7 @@ public class DongSimController {
 	private DongSimService dongsimService;
 	
 	
-	 @RequestMapping("/Quiz/quizList.do")
+	 @RequestMapping("quizList")
 	   public ModelAndView quizList(HttpServletRequest request) {
 		
 		    

@@ -11,7 +11,7 @@
     select * from dk_book_quiz
 </select>-->
 <select id="selectAll" parameterType="dto"  resultType="dto">
-<!--  SELECT idx as #{idx},dk_book_idx as dk_#{book_idx},gradations as #{gradations},question as #{question},answer as #{answer},use_yn as #{use_yn} FROM dk_book_quiz --> 
+<!--  SELECT idx as idx,dk_book_idx as dk_book_idx,gradations as gradations,question as question,answer as answer,use_yn as use_yn FROM dk_book_quiz --> 
  SELECT *
 FROM dk_book_quiz
 ORDER BY idx ASC
